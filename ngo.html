@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>社福機構及民間支持｜讓我們為你撐腰</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #F7F1ED;
+    --bg-alt: #F0E5DE;
+    --ink: #353848;
+    --ink-soft: #7B7E88;
+    --ochre: #D09E88;
+    --ochre-deep: #B18674;
+    --brick: #353848;
+    --cream-line: #8B8687;
+    --paper: #FFFFFF;
+    --max: 1080px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.01ms !important; transition-duration:0.01ms !important;}
+  }
+
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Noto Sans TC', sans-serif;
+    line-height:1.85;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3{
+    font-family:'Noto Serif TC', serif;
+    color:var(--ink);
+    line-height:1.4;
+    margin:0;
+  }
+
+  a{color:inherit;}
+  a:focus-visible, button:focus-visible{
+    outline:3px solid var(--ochre-deep);
+    outline-offset:3px;
+  }
+
+  .wrap{
+    max-width:var(--max);
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  header.site-nav{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:rgba(247,241,237,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--cream-line);
+  }
+  .nav-inner{
+    max-width:var(--max);
+    margin:0 auto;
+    padding:16px 28px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+  }
+  .brand{
+    font-family:'Noto Serif TC', serif;
+    font-weight:700;
+    font-size:1.05rem;
+    letter-spacing:0.02em;
+    white-space:nowrap;
+    text-decoration:none;
+  }
+  nav.links{
+    display:flex;
+    gap:26px;
+    overflow-x:auto;
+    scrollbar-width:none;
+  }
+  nav.links::-webkit-scrollbar{display:none;}
+  nav.links a{
+    text-decoration:none;
+    font-size:0.96rem;
+    color:var(--ink-soft);
+    white-space:nowrap;
+    padding:4px 2px;
+    border-bottom:2px solid transparent;
+    transition:border-color .2s ease, color .2s ease;
+  }
+  nav.links a:hover{
+    color:var(--brick);
+    border-color:var(--ochre);
+  }
+
+  .page-hero{
+    padding:80px 0 40px;
+  }
+  .page-hero .kicker{
+    color:var(--brick);
+    font-size:0.95rem;
+    margin-bottom:12px;
+    display:block;
+  }
+  .page-hero h1{
+    font-size:clamp(1.7rem, 3.2vw, 2.3rem);
+    font-weight:600;
+    margin-bottom:18px;
+  }
+  .page-hero p{
+    color:var(--ink-soft);
+    max-width:40em;
+    margin:0;
+  }
+
+  .content-section{
+    padding:20px 0 100px;
+  }
+
+  .org-card{
+    background:var(--paper);
+    border:1px solid var(--cream-line);
+    border-radius:8px;
+    padding:40px 42px;
+    margin-bottom:32px;
+  }
+  .org-card:last-child{
+    margin-bottom:0;
+  }
+  .org-card h2{
+    font-size:1.25rem;
+    font-weight:600;
+    margin-bottom:16px;
+  }
+  .org-card p{
+    color:var(--ink-soft);
+    margin:0 0 20px;
+    text-align:justify;
+  }
+  .org-card .org-link{
+    display:inline-block;
+    color:var(--brick);
+    font-size:0.93rem;
+    text-decoration:none;
+    border-bottom:1px solid var(--brick);
+    padding-bottom:1px;
+    transition:color .18s ease, border-color .18s ease;
+  }
+  .org-card .org-link:hover{
+    color:var(--ochre-deep);
+    border-color:var(--ochre-deep);
+  }
+
+  .back-row{
+    margin-top:48px;
+  }
+  .btn{
+    display:inline-block;
+    padding:12px 26px;
+    border-radius:6px;
+    font-size:0.95rem;
+    text-decoration:none;
+    font-weight:500;
+    transition:transform .18s ease, background .18s ease;
+    border:none;
+    cursor:pointer;
+  }
+  .btn-outline{
+    background:transparent;
+    color:var(--ink);
+    border:1px solid var(--cream-line);
+  }
+  .btn-outline:hover{
+    background:var(--bg-alt);
+    transform:translateY(-1px);
+  }
+
+  footer{
+    background:var(--ink);
+    color:#C7BDBB;
+    padding:26px 0 40px;
+    font-size:0.85rem;
+    border-top:1px solid #6B5F5D;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="撐腰的官網.html" class="brand">讓我們為你撐腰</a>
+    <nav class="links">
+      <a href="撐腰的官網.html#origin">緣起</a>
+      <a href="撐腰的官網.html#resources">資源盤點</a>
+      <a href="撐腰的官網.html#articles">文章</a>
+      <a href="撐腰的官網.html#contact">聯絡我們</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="kicker">資源盤點</span>
+    <h1>社福機構及民間支持</h1>
+    <p>各地社福機構與公益組織提供的陪伴者支援方案，以下整理目前較具代表性的資源與服務內容。</p>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="wrap">
+
+    <div class="org-card">
+      <h2>一、台灣障礙者手足資訊網</h2>
+      <p>「台灣障礙者手足資訊網」為專注於身心障礙者手足需求與議題的資訊交流平台。障礙者的手足在成長過程中，往往承擔著特殊的心理壓力與未來潛在的照顧期待。該網站整合了國內外關於障礙手足的研究成果、書籍與影音經驗分享，並發佈各類手足支持活動與聚會資訊。透過知識庫與經驗梳理，陪伴者能從中獲得心理共鳴，了解自身在家庭體系中的獨特角色與心理調適方法，減少孤單感並汲取同行者的經驗。</p>
+      <a class="org-link" href="https://sibtw.home.blog/aboutsibs/" target="_blank" rel="noopener">前往網站 ↗</a>
+    </div>
+
+    <div class="org-card">
+      <h2>二、財團法人天使心家族社會福利基金會</h2>
+      <p>天使心家族基金會是國內首創針對身心障礙者（愛奇兒）家長與健康手足提供專業服務的社福團體。基金會關注身心障礙家庭的整體健全發展，特別為不同年齡層的手足規劃專屬的心理成長團體與喘息服務。透過團體討論、同儕支持與專家引導，協助手足進行自我探索與個體化發展，學習在陪伴障礙家人的同時，也能重視與展現本身的生命價值與心理福祉。</p>
+      <a class="org-link" href="https://ah-h.org/siblings/service_intro" target="_blank" rel="noopener">前往網站 ↗</a>
+    </div>
+
+    <div class="org-card">
+      <h2>三、中華民國家庭照顧者關懷總會</h2>
+      <p>針對承擔實質照顧責任或家庭照顧壓力的陪伴者，「中華民國家庭照顧者關懷總會（家總）」提供完整的倡議、諮詢與支持網絡。家總設有免付費家庭照顧者關懷專線（0800-50-7272）及線上諮詢服務，協助照顧者辨識現有的政府福利、長照服務與喘息資源。透過專業社工的對話與資源轉介，引導家庭照顧者在面對繁重的照顧負荷時，能找到適切的外部支持與政策支援，減少照顧孤立與過度勞累的情形。</p>
+      <a class="org-link" href="https://www.familycare.org.tw/" target="_blank" rel="noopener">前往網站 ↗</a>
+    </div>
+
+    <div class="back-row">
+      <a href="撐腰的官網.html#resources" class="btn btn-outline">← 返回資源盤點</a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    國立臺灣師範大學・大學生身心障礙家庭陪伴者支持資源行動計畫
+  </div>
+</footer>
+
+</body>
+</html>
